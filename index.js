@@ -43,8 +43,8 @@ const mailbody = `
       <p>Please verify your email from the attached link</br>
       <b>Link will be valid only for 5 minutes!!</b></br>
       Find your link below:</p>
-      <p><a href=https://harshshah.me/v1/user/verifyUserEmail?token=${token}&email=${email} >
-        https://harshshah.me/v1/user/verifyUserEmail?token=${token}&email=${email} </a> </p>
+      <p><a href=https://harshshah.me/v1/account/verifyUserEmail?token=${token}&email=${email} >
+        https://harshshah.me/v1/account/verifyUserEmail?token=${token}&email=${email} </a> </p>
         </body></html>
     </body>
 </html>`;

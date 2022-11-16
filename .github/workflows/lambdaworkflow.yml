@@ -41,3 +41,4 @@ jobs:
       - name: Lambda Update
         run: |
           aws lambda update-function-code --function-name emailVerify --s3-bucket serverless.aws.lambda --s3-key index.zip
+
