@@ -43,8 +43,8 @@ const mailbody = `
       <p>Please verify your email from the attached link</br>
       <b>Link will be valid only for 5 minutes!!</b></br>
       Find your link below:</p>
-      <p><a href=https://harshshah.me/v1/account/verifyUserEmail?token=${token}&email=${email} >
-        https://harshshah.me/v1/account/verifyUserEmail?token=${token}&email=${email} </a> </p>
+      <p><a href=http://harshshah.me:8080/v1/account/verifyUser?token=${token}&email=${email} >
+        http://harshshah.me:8080/v1/account/verifyUser?token=${token}&email=${email} </a> </p>
         </body></html>
     </body>
 </html>`;
@@ -68,7 +68,6 @@ var params = {
     },
     Source: "sender@harshshah.me",
   };
-  console.log("email sent");
   return ses.sendEmail(params).promise()
   
 };           
